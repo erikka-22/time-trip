@@ -1,0 +1,3 @@
+<template>
+  <contentList></contentList>
+</template>
