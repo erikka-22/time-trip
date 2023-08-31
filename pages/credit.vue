@@ -2,7 +2,7 @@
   <v-layout>
     <TtAppBar />
     <v-main>
-      <ContentList />
+      <CreditText/>
     </v-main>
   </v-layout>
 </template>

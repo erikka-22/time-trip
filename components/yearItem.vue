@@ -10,14 +10,22 @@ const props = defineProps<{
 // const get
 </script>
 <template>
-  <NuxtLink :to="{ 
-    name: 'contents', 
-    query: { 
-      startYear: props.startYear, 
-      endYear: props.endYear 
-    } 
-  }">
-    {{ props.title }}
-  </NuxtLink>
-  <img :src="props.thumbnailUrl">
+  <v-card
+    class="mx-auto"
+    max-width="400"
+    max-height="400"
+  >
+    <NuxtLink :to="{ 
+      name: 'contents', 
+      query: { 
+        startYear: props.startYear, 
+        endYear: props.endYear 
+      } 
+    }">
+      {{ props.title }}
+      <v-img :src="props.thumbnailUrl">
+      </v-img>
+    </NuxtLink>
+  </v-card>
+  
 </template>

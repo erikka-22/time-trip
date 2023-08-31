@@ -1,6 +1,6 @@
 <template>
   <v-layout>
-    <v-app-bar :elevation="2" title="メディア芸術タイムマシン"></v-app-bar>
+    <TtAppBar />
     <v-main>
       <YearList />
     </v-main>
